@@ -1,0 +1,78 @@
+//
+//  main.swift
+//  Day1
+//
+//  Created by Hongdonghyun on 14/10/2019.
+//  Copyright © 2019 hongdonghyun. All rights reserved.
+//
+
+import Foundation
+
+//func printGugu(dan:Int) {
+//    for i in 1...9 {
+//        print("\(dan) * \(i) = \(dan * i)")
+//    }
+//}
+
+
+//printGugu(dan:1)
+
+
+//typealias Point = (x:Int , y:Int)
+//
+//
+//func distance (a : Point, b : Point) -> Double {
+//    return 0.0
+//}
+//
+//
+//distance(a: (x:10,y:10),b:(x:20,y:20))
+
+//
+//1) 가로/세로 칸을 입력값으로 넘기면 가로*세로 크기의 사다리를
+//만드는 makeLadder()함수를 작성하세요.
+//사다리는 Bool 타입 2차원 배열로 표현하세요.
+//사다리가 있으면 true , 없으면 false
+
+func makeLadder (row:Int,col:Int) -> Array<Array<Bool>> {
+    var ladders = Array<Array<Bool>>()
+    for _ in 0..<row {
+        var rowLadder = Array<Bool>()
+        for _ in 0..<col {
+            rowLadder.append(false)
+        }
+        ladders.append(rowLadder)
+    }
+    return ladders
+}
+
+
+func printLadder(_ ladders:[[Bool]]) {
+    for row in ladders {
+        for col in row {
+            print(col ? "-":" ")
+        }
+        print("")
+    }
+}
+
+
+//정수 숫자 배열 Array를 입력으로 받아서
+//배열중에 있는 2 또는 3의 배수를 골라서
+//골라진 숫자들에 각각 5를 곱하고
+//모든 숫자들의 합을 구하는 함수
+
+
+//func complex(from array: [Int]) -> Int {
+//    return array.filter({$0 % 2 == 0 || $0 % 3 == 0}).map({$0 * 5}).reduce(0,{$0+$1})
+//}
+
+//print(complex(from:[1,2,3]))
+
+
+func fizzbuzz(lines : Int)->Array<String> {
+    var result = [String]()
+    for index in 1...lines {
+        switch 
+    }
+}
